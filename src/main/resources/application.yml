@@ -1,0 +1,8 @@
+server:
+  port: 8088
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: '{%t}{%h}{%r}{%s}{%B}{%D}{%{Referer}i}{%{User-Agent}i}%{jsessionid}r'
+      directory: access
+    basedir: tomcat
